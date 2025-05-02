@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Russo One", sans-serif;
+  overflow: hidden;
+}
+
+.eclipse {
+  z-index: -1;
+  position: absolute;
+  animation: girar 1s linear infinite;
+}
+
+@keyframes girar {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #000;
+}
+
+.title {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 35px;
+  font-size: 45px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 400px;
+}
+
+.input {
+  border: 3px solid #fff;
+  padding: 15px;
+  background: transparent;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 50px;
+  font-weight: 100;
+  outline: none;
+  text-transform: uppercase;
+}
+
+.button {
+  border: none;
+  padding: 15px;
+  background: linear-gradient(270deg, #9370db, #7a1cc7, #8a2be2);
+  background-size: 300% 100%;
+  background-position: 0% 50%;
+  color: #fff;
+  font-size: 25px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-position 0.9s ease;
+}
+
+.button:hover {
+    background-position: 100% 50%;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 25px;
+}
+
+.links a {
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: 500;
+  text-decoration: none;
+}
