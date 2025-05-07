@@ -167,6 +167,8 @@ body {
   display: flex;
   margin: 10rem 6rem;
   gap: 10rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .experience-text {
@@ -175,6 +177,8 @@ body {
   flex-direction: column;
   gap: 3rem;
   width: 50%;
+  flex: 1;
+  padding: 2rem;
 }
 
 .experience-text h2 {
@@ -185,6 +189,9 @@ body {
 
 .logo-experience {
   position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   z-index: -2;
   opacity: 10%;
 }
@@ -195,9 +202,14 @@ body {
   height: 9px;
   background-color: var(--Cor_3);
   position: absolute;
-  left: 0px;
-  top: 60px;
+  left: 35px;
+  top: 90px;
   z-index: 1;
+}
+
+.experience-text {
+  display: flex;
+  align-items: flex-start;
 }
 
 .experience-text p {
@@ -207,17 +219,22 @@ body {
 }
 
 .experience-text a {
-  position: relative;
-  color: var(--Cor_2);
+  display: inline-block;
+  padding: 15px 30px;
+  margin: 0; /* garante sem margem lateral */
   border-radius: 20px;
   font-size: 20px;
   font-weight: 600;
-  padding: 15px 30px;
+  text-transform: uppercase;
+  color: var(--Cor_2);
   border: 3px solid transparent;
-  z-index: 1;
+  position: relative;
   overflow: hidden;
+  z-index: 1;
   transition: color 0.6s ease-in-out, border 0.6s ease-in-out;
 }
+
+
 
 .experience-text a::before {
   content: "";
@@ -247,31 +264,66 @@ body {
   opacity: 0;
 }
 
+/* ====================== Imagem ====================== */
+
 .experience-image {
-  position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.experience-image .triangle {
-  position: absolute;
-  bottom: 370px;
-  left: 300px;
-  z-index: -1;
-  width: 50%;
-  opacity: 50%;
-}
-
-.experience-image .circle {
-  position: absolute;
-  top: 320px;
-  right: 340px;
-  z-index: -1;
-  width: 50%;
-  opacity: 50%;
+  flex: 1;
+  position: relative;
+  padding: 5rem;
 }
 
 .experience-image .image-xp {
   width: 80%;
+}
+
+.experience-image .triangle {
+  position: absolute;
+  width: 50%;
+  top: 0;
+  right: 3.5rem;
+  z-index: -1;
+}
+
+.experience-image .circle {
+  position: absolute;
+  width: 50%;
+  bottom: 0;
+  left: -5rem;
+  z-index: -1;
+}
+
+/* ====================== Musica ====================== */
+
+.music-connection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/Foto\ \(2\).png");
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: multiply;
+  background-position: center;
+  height: 60vh;
+  position: relative;
+}
+
+.music-connection-image {
+  display: flex;
+  flex: 1;
+}
+
+.music-connection-text {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  flex: 1;
+}
+
+.music-connection-text .square {
+  position: absolute;
+  width: 50%;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
