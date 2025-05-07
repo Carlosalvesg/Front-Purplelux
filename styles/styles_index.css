@@ -311,6 +311,8 @@ body {
 .music-connection-image {
   display: flex;
   flex: 1;
+  justify-content: center;
+  align-items: center;
 }
 
 .music-connection-text {
@@ -318,6 +320,60 @@ body {
   position: relative;
   flex-direction: column;
   flex: 1;
+  gap: 2.5rem;
+  margin: 0rem 6rem;
+}
+
+.music-connection-text h2 {
+  color: var(--Cor_3);
+  font-size: 40px;
+  text-transform: uppercase;
+  width: 350px;
+  font-weight: 400;
+}
+
+.music-connection-text .music-span {
+  font-weight: bolder;
+}
+
+.line-music {
+  display: block;
+  width: 100px;
+  height: 9px;
+  background-color: var(--Cor_3);
+  position: absolute;
+  left: 0px;
+  top: 120px;
+  z-index: 1;
+}
+
+.info-music{
+  display: flex;
+  flex-direction: column;
+}
+
+.info-music p{
+  font-size: 20px;
+  color: var(--Cor_1);
+  font-weight: 600;
+}
+
+.info-music .music-p{
+  font-size: 20px;
+  color: var(--Cor_1);
+  width: 400px;
+  font-weight: 300;
+}
+
+.music-p span{
+  font-weight: 600;
+}
+
+.music-h4{
+  color: var(--Cor_5);
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .music-connection-text .square {
@@ -325,5 +381,5 @@ body {
   width: 50%;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: -1;
 }
